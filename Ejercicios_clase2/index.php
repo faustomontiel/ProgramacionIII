@@ -1,11 +1,27 @@
 <?php
     require "alumno.php";
-    var $alumnoUno = new Alumno($_POST["77878977"],$_POST["fausto"],$_POST["montiel"],$_POST["1325"]);
-    var $alumnoDos = new Alumno($_POST["78789977"],$_POST["gaston"],$_POST["gomez"],$_POST["2555"]);
-    var $arrayAlumnosJson = array($alumnoUno,$alumnoDos);
-    
-    var $file = fopen("json_file.json", "w");
-    var $string = json_encode($arrayAlumnosJson);
-    fwrite($file, $string);
+     $alumnoUno = new Alumno("77878977","fausto","montiel","1325");
+     $alumnoDos = new Alumno("78789977","gaston","gomez","2555");
+     $arrayAlumnosJson = array($alumnoUno,$alumnoDos);
+
+   $file = fopen("json_file.json", "w");
+     $alumnosEncode = json_encode($arrayAlumnosJson);
+    fwrite($file, $alumnosEncode);
     fclose($file);
+/*
+    $alumnosDecode = json_decode($alumnosEncode);
+
+     $file = fopen("csv_file.csv", "w");
+    foreach ($alumnoUno as $item) {
+        
+    }
+*/
+
+    var_dump($arrayAlumnosJson);
+    var_dump($_FILES);
+    $_FILES["imagen"]["name"] = "hola.jpg";
+    var_dump($_FILES["imagen"]["name"]);
+
+
+    
 ?>
