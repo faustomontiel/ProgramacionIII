@@ -1,0 +1,12 @@
+SELECT a.id,a.nombre,a.legajo,l.localidad FROM `alumnos` a, localidad l where a.localidad = l.id AND l.localidad LIKE "avellaneda"
+
+PHP:
+
+$sql = "SELECT a.id,a.nombre,a.legajo,l.localidad FROM `alumnos` a, localidad l where a.localidad = l.id AND l.localidad LIKE \"avellaneda\"";
+
+
+
+
+SELECT m.nombre,a.nombre,a.legajo FROM `materia_alumno` ma,`alumnos` a,`materias` m WHERE ma.id_alumno = a.id AND ma.id_materia = m.id
+php:
+$sql = "SELECT m.nombre,a.nombre,a.legajo FROM `materia_alumno` ma,`alumnos` a,`materias` m WHERE ma.id_alumno = a.id AND ma.id_materia = m.id";
