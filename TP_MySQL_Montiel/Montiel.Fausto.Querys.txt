@@ -1,0 +1,29 @@
+SELECT * FROM productos order by pNombre ASC
+1 Caramelos 1.5 Chico
+2 Cigarrillos 45.89 Mediano
+3 Gaseosa 15.8 Grande
+
+SELECT * from provedores where localidad = 'Quilmes'
+100 Perez Perón 876 Quilmes
+
+SELECT * from envios where cantidad >= 200 and cantidad <= 300
+101 3 225
+102 3 300
+
+SELECT SUM(Cantidad) from envios
+3280
+
+SELECT pNumero FROM `envios` LIMIT 3
+1
+2
+3
+
+SELECT prov.Nombre, prod.pNombre FROM provedores prov, productos prod,envios en WHERE en.Numero = prov.Numero and en.pNumero = prod.pNumero
+Perez  Caramelos
+Aguirre Caramelos
+Perez Cigarrillos
+Gimenez Cigarrillos
+Perez Gaseosa
+Gimenez Gaseosa
+Aguirre Gaseosa
+
