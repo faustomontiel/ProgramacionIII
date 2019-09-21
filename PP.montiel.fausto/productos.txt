@@ -1,0 +1,6 @@
+{"id":"1","nombre":"Arroz","precio":"10","imagen":null,"nombreUsuario":"juan"}
+{"id":"2","nombre":"Fideos","precio":"20","imagen":null,"nombreUsuario":"lucas"}
+{"id":"3","nombre":"harina","precio":"30","imagen":null,"nombreUsuario":"lucas"}
+{"id":"4","nombre":"manteca","precio":"40","imagen":null,"nombreUsuario":"jose"}
+{"id":"4","nombre":"manteca","precio":"40","imagen":null,"nombreUsuario":"jose"}
+{"id":"4","nombre":"manteca","precio":"40","imagen":null,"nombreUsuario":"jose"}
